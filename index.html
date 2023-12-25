@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD App</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2 class="mt-4 mb-4">CRUD App</h2>
+
+  <!-- Form to add a new item -->
+  <form id="addItemForm" class="mb-4">
+    <div class="form-group">
+      <label for="itemName">Item Name:</label>
+      <input type="text" class="form-control" id="itemName" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Item</button>
+  </form>
+
+  <!-- List to display all items -->
+  <ul id="itemList" class="list-group">
+    <!-- Items will be dynamically added here using JavaScript -->
+  </ul>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Your custom JavaScript file for handling CRUD operations -->
+<script src="script.js"></script>
+
+</body>
+</html>
